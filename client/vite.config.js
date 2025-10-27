@@ -11,7 +11,8 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://praca-inzynierska-memorybox-api.up.railway.app:3000'
+        target: 'https://praca-inzynierska-memorybox-api.up.railway.app',
+        changeOrigin: true
       }
     }
   }
